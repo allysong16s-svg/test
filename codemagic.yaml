@@ -1,0 +1,16 @@
+workflows:
+  android-build:
+    name: TabletAviso Android
+    instance_type: linux_x2
+
+    environment:
+      java: 17
+
+    scripts:
+      - name: Build APK
+        script: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
