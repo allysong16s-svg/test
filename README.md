@@ -24,4 +24,3 @@ Build > Build Bundle(s) / APK(s) > Build APK(s)
 O APK ficará em:
 
 app/build/outputs/apk/debug/app-debug.apk
-"# test" 
